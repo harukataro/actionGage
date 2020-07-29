@@ -36,7 +36,7 @@ public class StageSelectManager : MonoBehaviour
 
     private void TransitionScene(int stage)
     {
-        string sceneName = "stage" + stage.ToString();
+        string sceneName = "Stage" + stage.ToString();
 
         GetComponent<AudioSource>().Play();
         GameObject.Find("FadeManager").GetComponent<Fade>().TransitionScene(sceneName);
