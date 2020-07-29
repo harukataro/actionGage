@@ -61,12 +61,11 @@ public class BossController : MonoBehaviour
             }
             else if (stage == 4)
             {
-                Shot_Bounding(5.0f, GetAngleToPlayer() - 20.0f, 5.0f);
-                Shot_Bounding(5.0f, GetAngleToPlayer() + 20.0f, 5.0f);
+                Shot_Homing(4.0f, GetAngleToPlayer(), 5.0f);
             }
             else if (stage == 5)
             {
-                Shot(8.0f, GetAngleToPlayer(), 5.0f);
+                Shot(4.0f, GetAngleToPlayer(), 5.0f);
             }
         }
     }

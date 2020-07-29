@@ -1809,7 +1809,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2036280356}
-        m_MethodName: TransSceneSwitch_4
+        m_MethodName: TransSceneSwitch_1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
