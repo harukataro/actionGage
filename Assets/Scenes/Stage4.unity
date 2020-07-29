@@ -1308,7 +1308,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 562072936112532656, guid: 3ebe7193786a64a2b97dc0a0005f6547,
     type: 3}
   health: 5
-  maxHealth: 30
+  maxHealth: 10
   playerObj: {fileID: 392534708}
   VanishParticlePrefab: {fileID: 937272928}
   stage: 4

@@ -14,10 +14,12 @@ public class BossController : MonoBehaviour
     public GameObject playerObj;
     public GameObject VanishParticlePrefab;
     public int stage;
+    private float interval;
 
     // Start is called before the first frame update
     void Start()
     {
+        interval = 0.8f;
         health = maxHealth;
         gameManager.SetBossHealthUI(health, maxHealth);
     }
@@ -29,14 +31,7 @@ public class BossController : MonoBehaviour
             return;
 
         time += Time.deltaTime;
-        // if (time > 0.4f)
-        // {
-        //     time -= 0.4f;
 
-        //     Shot(8.0f, GetAngleToPlayer(), 5.0f);
-        //     Shot(3.0f, GetAngleToPlayer() - 20.0f, 5.0f);
-        //     Shot(3.0f, GetAngleToPlayer() + 20.0f, 5.0f);
-        // }
         if (time > 0.4f)
         {
             time -= 0.4f;
@@ -61,11 +56,11 @@ public class BossController : MonoBehaviour
             }
             else if (stage == 4)
             {
-                Shot_Homing(4.0f, GetAngleToPlayer(), 5.0f);
+                Shot_Homing(2.0f, GetAngleToPlayer(), 5.0f);
             }
             else if (stage == 5)
             {
-                Shot(4.0f, GetAngleToPlayer(), 5.0f);
+                Shot(2.0f, GetAngleToPlayer(), 5.0f);
             }
         }
     }
